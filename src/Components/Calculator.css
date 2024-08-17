@@ -12,4 +12,31 @@
 
 .display{
     width: 92%;
+    height: 80px;
+    background-color: lightblue;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 24px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.buttons{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap :10px
+
+}
+
+button {
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
 }

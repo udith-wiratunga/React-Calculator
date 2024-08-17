@@ -26,14 +26,17 @@ const Calculator = () => {
 
   return <div className="calculator">
           <div className='display'>{display}</div>
-          <div>{[
+          <div className='buttons'>{[
           "7","8","9","+",
           "4","5","6","-",
           "1","2","3","*",
           "0",".","=","/"
         ].map((value) => (
           <button key={value} onClick={()=> value ==='='?calculateResults():handleButtonClick(value)}>{value}</button>
-        ))}</div>
+          
+        ))}
+        <button onClick={clearDisplay}>C</button>
+        </div>
 
         </div>;
   
